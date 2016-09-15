@@ -22,7 +22,7 @@ class ViewController:
             coolLabel.text="now cooler!"
         print("button tapped")
         tapCount = tapCount + 1
-        if tapCount > 10 {
+        if tapCount >= 20 {
                ( coolLabel.text="You have tapped 10 times")
         }
     }
