@@ -14,6 +14,12 @@ class ViewController:
     @IBOutlet weak var coolLabel:
         UILabel!
     
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
+    
+    
+    
     var tapCount = 0
     
     
