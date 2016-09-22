@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Swift APP 2
 //
-//  Created by BHSRam2 on 9/13/16.
+//  Created by BHSRam2 on 9/22/16.
 //  Copyright © 2016 BHSRam2. All rights reserved.
 //
 
@@ -20,17 +20,13 @@ class ViewController:
     
     
     
-    var tapCount = 0
+    
     
     
     @IBAction func button1Tapped(_ sender: AnyObject) {
         
-            coolLabel.text="now cooler!"
-        print("button tapped")
-        tapCount = tapCount + 1
-        if tapCount >= 20 {
-               ( coolLabel.text="You have tapped 10 times")
-        }
+        coolLabel.text = String(Double(text1.text!)! + Double(text2.text!)!)
+        
     }
     
     override func viewDidLoad() {
