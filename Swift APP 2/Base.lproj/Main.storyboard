@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrJ-uS-Pkt">
-                                <state key="normal" title="Push me"/>
+                                <state key="normal" title="Push me I'm Irish"/>
                                 <connections>
                                     <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zlb-58-DDh"/>
                                 </connections>
