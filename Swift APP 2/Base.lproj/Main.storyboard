@@ -18,13 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Morning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDN-es-9jw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Me Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDN-es-9jw">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrJ-uS-Pkt">
-                                <state key="normal" title="Push me I'm Irish"/>
+                                <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zlb-58-DDh"/>
                                 </connections>
@@ -45,17 +45,41 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ty0-Ky-I2B">
+                                <state key="normal" title="Subtract"/>
+                                <connections>
+                                    <action selector="subtract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="buZ-N5-8sj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBP-tD-bBX">
+                                <state key="normal" title="Divide"/>
+                                <connections>
+                                    <action selector="divide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PG7-Ix-wXT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvO-gh-XnM">
+                                <state key="normal" title="Multiply"/>
+                                <connections>
+                                    <action selector="multiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pq8-Ts-KfC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="jBP-tD-bBX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="94" id="07i-p6-FCJ"/>
+                            <constraint firstItem="AvO-gh-XnM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="94" id="0Yz-9u-n7j"/>
                             <constraint firstItem="uAq-ji-l7P" firstAttribute="top" secondItem="82P-K5-J2c" secondAttribute="bottom" constant="40" id="0Zz-Bl-2SS"/>
                             <constraint firstItem="hDN-es-9jw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="99" id="EqN-Uv-UzT"/>
                             <constraint firstItem="uAq-ji-l7P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jgm-vR-VbO"/>
+                            <constraint firstItem="ty0-Ky-I2B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="TAS-ub-qGc"/>
+                            <constraint firstItem="jBP-tD-bBX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="127" id="TJe-5E-spe"/>
+                            <constraint firstItem="AvO-gh-XnM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-124.5" id="XZb-xd-kCQ"/>
                             <constraint firstItem="mrJ-uS-Pkt" firstAttribute="top" secondItem="hDN-es-9jw" secondAttribute="bottom" constant="25" id="Xkt-YU-u5o"/>
                             <constraint firstItem="82P-K5-J2c" firstAttribute="top" secondItem="mrJ-uS-Pkt" secondAttribute="bottom" constant="40" id="ed4-8k-CAH"/>
                             <constraint firstItem="mrJ-uS-Pkt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fb2-1u-Nym"/>
                             <constraint firstItem="82P-K5-J2c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g19-Nh-7D4"/>
                             <constraint firstItem="hDN-es-9jw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oEm-aN-G9O"/>
+                            <constraint firstItem="ty0-Ky-I2B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r1m-Km-tlr"/>
                         </constraints>
                     </view>
                     <connections>

@@ -19,6 +19,7 @@ class ViewController:
     @IBOutlet weak var text2: UITextField!
     
     
+  
     
     
     
@@ -27,10 +28,33 @@ class ViewController:
         
         /*coolLabel.text = String(Double(text1.text!)! + Double(text2.text!)!)*/
         
-        coolLabel.text = "answer is...\(Double(text1.text!)! + Double(text2.text!)!)"
-
-      
+        coolLabel.text = "Answer is...\(Double(text1.text!)! + Double(text2.text!)!)"
+        
     }
+    
+    
+    @IBAction func subtract(_ sender: AnyObject) {
+        coolLabel.text = "Answer is...\(Double(text1.text!)! - Double(text2.text!)!)"
+    }
+    
+    
+    
+    @IBAction func multiply(_ sender: AnyObject) {
+        coolLabel.text = "Answer is...\(Double(text1.text!)! * Double(text2.text!)!)"
+    }
+    
+    
+    @IBAction func divide(_ sender: AnyObject) {
+        
+    coolLabel.text = "Answer is...\(Double(text1.text!)! / Double(text2.text!)!)"
+    }
+    
+    
+    
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
